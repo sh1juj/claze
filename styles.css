@@ -1168,6 +1168,7 @@ button { border: none; background: none; cursor: pointer; font: inherit; }
   .stat-card, .problem-point, .solution-card { padding: 1.5rem 1.25rem; }
 }
 
+/* ── LinkedIn Icon ───────────────────────── */
 .linkedin-icon {
   margin-left: 8px;
   color: var(--charcoal-soft);
@@ -1177,5 +1178,5 @@ button { border: none; background: none; cursor: pointer; font: inherit; }
 }
 
 .linkedin-icon:hover {
-  color: #0077b5; /* LinkedIn blue */
+  color: #0077b5;
 }
