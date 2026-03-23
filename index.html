@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Claze — Low-Carbon Building Materials</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════ NAVBAR ═══════════════ -->
+  <nav class="nav" id="navbar">
+    <div class="nav__inner">
+      <!-- LOGO: place file at assets/claze-logo.png -->
+      <a href="index.html" class="nav__logo">
+        <img src="assets/claze-logo.png" alt="Claze" class="nav__logo-img"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='block';" />
+        <span class="nav__logo-fallback" style="display:none;">CLAZE</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#how-it-works">Process</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#traction">Traction</a></li>
+        <li><a href="team.html">Team</a></li>
+      </ul>
+      <a href="#contact" class="btn btn--nav">Get in Touch</a>
+      <button class="nav__burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#problem" class="mobile-link">Problem</a></li>
+      <li><a href="#solution" class="mobile-link">Solution</a></li>
+      <li><a href="#how-it-works" class="mobile-link">Process</a></li>
+      <li><a href="#benefits" class="mobile-link">Benefits</a></li>
+      <li><a href="#traction" class="mobile-link">Traction</a></li>
+      <li><a href="team.html" class="mobile-link">Team</a></li>
+      <li><a href="#contact" class="mobile-link mobile-link--cta">Get in Touch</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section class="hero" id="hero">
+      <div class="hero__concentric" aria-hidden="true"></div>
+      <div class="hero__inner container">
+        <div class="hero__content fade-in">
+          <!-- HERO LOGO: place file at assets/claze-logo.png -->
+          <div class="hero__logo-wrap">
+            <img src="assets/claze-logo.png" alt="Claze" class="hero__logo"
+                 onerror="this.parentElement.innerHTML='<div class=\'hero__logo-text\'>CLAZE</div>'" />
+          </div>
+          <h1 class="hero__headline">
+            Using Industrial<br />
+            <em>Waste Heat</em> To Make<br />
+            Low-Carbon Materials
+          </h1>
+          <p class="hero__sub">
+            Claze is developing a process that uses waste heat from industrial operations to calcine clay, producing a low-carbon supplementary cementitious material without additional fuel.
+          </p>
+          <div class="hero__ctas">
+            <a href="#solution" class="btn btn--primary">Learn More</a>
+            <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+          </div>
+        </div>
+
+        <div class="hero__visual fade-in fade-in--delay" aria-hidden="true">
+          <!--
+            OPTIONAL: Replace inner content with a local image:
+            <img src="assets/hero-texture.jpg" alt="" class="hero__material-img" />
+          -->
+          <div class="hero__material-card">
+            <div class="hero__material-grain"></div>
+            <div class="hero__material-overlay"></div>
+            <div class="hero__material-info">
+              <div class="hero__material-label">Calcined Clay SCM</div>
+              <div class="hero__material-sub">Low-Carbon · Drop-in Compatible</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ PROBLEM ═══════════════ -->
+    <section class="section section--light" id="problem">
+      <div class="container">
+        <div class="section-label fade-up">The Problem</div>
+        <h2 class="section-title fade-up">Cement is a significant and structural source of CO₂</h2>
+        <p class="section-intro fade-up">
+          Cement production accounts for roughly 7% of global CO₂ emissions. Most of those emissions are process-related — they come from making clinker, not from burning fuel — which means switching to zero-carbon energy alone does not resolve the problem.
+        </p>
+
+        <div class="stats-grid fade-up">
+          <div class="stat-card">
+            <div class="stat-card__num">4 <span>Gt</span></div>
+            <div class="stat-card__label">Global annual production</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__num">~2.4 <span>Gt/y</span></div>
+            <div class="stat-card__label">Estimated CO₂ emissions</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__num">£400 <span>bn+</span></div>
+            <div class="stat-card__label">Global market size</div>
+          </div>
+        </div>
+
+        <div class="problem-points fade-up">
+          <div class="problem-point">
+            <div class="problem-point__icon">↗</div>
+            <h3>Rising Demand</h3>
+            <p>Cement demand is projected to grow, particularly across the global south, where large-scale construction activity is expected to increase.</p>
+          </div>
+          <div class="problem-point">
+            <div class="problem-point__icon">₤</div>
+            <h3>Cost Sensitivity</h3>
+            <p>Cement is a commodity with thin margins. Solutions requiring significant cost premiums face structural adoption barriers.</p>
+          </div>
+          <div class="problem-point">
+            <div class="problem-point__icon">CO₂</div>
+            <h3>Process Emissions</h3>
+            <p>Around 60% of cement emissions come from calcining limestone to make clinker. Reducing clinker content is the primary decarbonisation lever.</p>
+          </div>
+        </div>
+
+        <div class="callout-bar fade-up">
+          Demand for low-carbon cement is growing. The constraint is supply of affordable, scalable alternatives.
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ SOLUTION ═══════════════ -->
+    <section class="section section--warm" id="solution">
+      <div class="container">
+        <div class="section-label fade-up">The Solution</div>
+        <h2 class="section-title fade-up">Calcined clay from waste heat,<br />without additional fuel.</h2>
+        <p class="section-intro fade-up">
+          Claze is developing a process that uses high-temperature waste heat — from steelmaking and other industrial operations — to calcine clay. The resulting material can be used as a supplementary cementitious material (SCM), reducing the clinker content and carbon intensity of cement.
+        </p>
+
+        <div class="solution-grid fade-up">
+          <div class="solution-card solution-card--accent">
+            <div class="solution-card__tag">Energy</div>
+            <h3>No Additional Fuel</h3>
+            <p>The process is designed to run on waste heat that industrial sites already generate. No separate fuel source is needed for calcination.</p>
+          </div>
+          <div class="solution-card">
+            <div class="solution-card__tag">Economics</div>
+            <h3>Low Capital Requirements</h3>
+            <p>The approach is designed to integrate with existing infrastructure rather than require dedicated new kilns or greenfield construction.</p>
+          </div>
+          <div class="solution-card">
+            <div class="solution-card__tag">Resource</div>
+            <h3>Abundant Feedstock</h3>
+            <p>Clay is widely available, including in regions where cement demand is highest, offering potential for geographically distributed deployment.</p>
+          </div>
+          <div class="solution-card">
+            <div class="solution-card__tag">Operations</div>
+            <h3>Designed to Be Non-Disruptive</h3>
+            <p>The process is intended to operate alongside existing industrial activity without interrupting core plant operations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ WHY NOW ═══════════════ -->
+    <section class="section section--dark" id="why-now">
+      <div class="container">
+        <div class="section-label fade-up" style="color:var(--clay-light);">Why Now</div>
+        <h2 class="section-title fade-up" style="color:var(--off-white);">Converging pressures are creating a clear market gap</h2>
+        <p class="section-intro fade-up" style="color:rgba(245,241,235,0.7);">
+          Regulatory pressure, ESG commitments, and the structural decline of traditional SCM sources are creating demand for new decarbonisation pathways in the cement sector — at a time when the industry is looking for practical, cost-effective solutions.
+        </p>
+        <div class="why-now-grid fade-up">
+          <div class="why-card">
+            <div class="why-card__num">01</div>
+            <h3>Traditional SCM supply is declining</h3>
+            <p>Fly ash and GGBS — the most widely used SCMs — are becoming less available as coal power and blast-furnace steelmaking reduce output.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-card__num">02</div>
+            <h3>Construction demand is growing</h3>
+            <p>A substantial portion of the built environment projected for 2050 has yet to be constructed, concentrated in regions with limited low-carbon material supply.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-card__num">03</div>
+            <h3>Regulatory and industry pressure</h3>
+            <p>Carbon pricing schemes, green procurement standards, and corporate net-zero commitments are increasing the urgency for verifiable emission reductions in construction materials.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ HOW IT WORKS ═══════════════ -->
+    <section class="section section--light" id="how-it-works">
+      <div class="container">
+        <div class="section-label fade-up">Process</div>
+        <h2 class="section-title fade-up">From waste heat to low-carbon cement</h2>
+        <p class="section-intro fade-up">
+          The core concept is straightforward: use heat that industrial operations already produce, apply it to calcine clay, and supply the resulting material as an SCM to cement producers.
+        </p>
+
+        <div class="flow-diagram fade-up">
+
+          <div class="flow-step">
+            <div class="flow-step__icon flow-step__icon--heat">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="20" cy="20" r="17" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M20 30C14 26 14 14 20 10C26 14 26 26 20 30Z" fill="currentColor" opacity="0.25"/>
+                <path d="M20 27C16 24 16 16 20 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="flow-step__label">Industrial Waste Heat</div>
+            <div class="flow-step__sub">Steel, clinker &amp; non-ferrous operations</div>
+          </div>
+
+          <div class="flow-arrow" aria-hidden="true">
+            <svg viewBox="0 0 56 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 8H48M40 2L48 8L40 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+          <div class="flow-step flow-step--center">
+            <div class="flow-step__icon flow-step__icon--claze">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="20" cy="20" r="17" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="20" cy="20" r="11" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+                <circle cx="20" cy="20" r="5" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+                <circle cx="20" cy="20" r="2" fill="currentColor"/>
+              </svg>
+            </div>
+            <div class="flow-step__label">Claze Process</div>
+            <div class="flow-step__sub">Proprietary heat-transfer calcination</div>
+            <div class="flow-step__patent">PATENT FILED</div>
+          </div>
+
+          <div class="flow-arrow" aria-hidden="true">
+            <svg viewBox="0 0 56 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 8H48M40 2L48 8L40 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-step__icon flow-step__icon--clay">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="6" y="24" width="28" height="10" rx="2" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M10 24Q13 12 20 14Q27 12 30 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+              </svg>
+            </div>
+            <div class="flow-step__label">Calcined Clay</div>
+            <div class="flow-step__sub">Low-carbon SCM</div>
+          </div>
+
+          <div class="flow-arrow" aria-hidden="true">
+            <svg viewBox="0 0 56 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 8H48M40 2L48 8L40 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-step__icon flow-step__icon--cement">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="7" y="7" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M7 20H33M20 7V33" stroke="currentColor" stroke-width="1" opacity="0.35"/>
+                <circle cx="20" cy="20" r="5" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="1"/>
+              </svg>
+            </div>
+            <div class="flow-step__label">Low-Carbon Cement</div>
+            <div class="flow-step__sub">Reduced clinker content</div>
+          </div>
+
+        </div>
+
+        <div class="process-note fade-up">
+          Reducing clinker content requires suitable SCMs. Producing those SCMs requires high-temperature heat. Claze uses heat that industrial sites already generate.
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ BENEFITS ═══════════════ -->
+    <section class="section section--warm" id="benefits">
+      <div class="container">
+        <div class="section-label fade-up">Benefits</div>
+        <h2 class="section-title fade-up">Designed to be capital-light, low-carbon, and compatible with existing operations.</h2>
+
+        <div class="benefits-split fade-up">
+          <div class="benefits-col">
+            <div class="benefits-col__title">For Industrial Partners</div>
+            <ul class="benefit-list">
+              <li>
+                <span class="benefit-list__marker"></span>
+                <div>
+                  <strong>Potential to reduce reported emissions</strong>
+                  <p>Economic allocation of waste heat recovery may support improvements in reported scope 1 or scope 2 figures.</p>
+                </div>
+              </li>
+              <li>
+                <span class="benefit-list__marker"></span>
+                <div>
+                  <strong>Revenue from waste streams</strong>
+                  <p>Waste heat that is currently dissipated could generate value through a commercial arrangement with Claze.</p>
+                </div>
+              </li>
+              <li>
+                <span class="benefit-list__marker"></span>
+                <div>
+                  <strong>No change to core operations</strong>
+                  <p>The process is designed to be additive — integration should not require modifications to existing plant workflows.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="benefits-divider" aria-hidden="true"></div>
+
+          <div class="benefits-col">
+            <div class="benefits-col__title">For Cement Producers</div>
+            <ul class="benefit-list">
+              <li>
+                <span class="benefit-list__marker"></span>
+                <div>
+                  <strong>Access to a scalable SCM source</strong>
+                  <p>Calcined clay is not dependent on fly ash or GGBS supply, which are both structurally declining.</p>
+                </div>
+              </li>
+              <li>
+                <span class="benefit-list__marker"></span>
+                <div>
+                  <strong>Lower clinker-to-cement ratio</strong>
+                  <p>A quality SCM enables cement producers to reduce clinker content and the associated process emissions.</p>
+                </div>
+              </li>
+              <li>
+                <span class="benefit-list__marker"></span>
+                <div>
+                  <strong>Drop-in compatibility</strong>
+                  <p>Calcined clay is an established SCM with existing standards frameworks. It does not require reformulation of cement products.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ TRACTION ═══════════════ -->
+    <section class="section section--light" id="traction">
+      <div class="container">
+        <div class="section-label fade-up">Traction</div>
+        <h2 class="section-title fade-up">Bench-scale results. Progressing to pilot.</h2>
+        <p class="section-intro fade-up">
+          Claze has completed initial bench-scale work and is advancing toward pilot-scale trials. The company is at an early stage of development.
+        </p>
+
+        <div class="traction-grid fade-up">
+          <div class="traction-item">
+            <div class="traction-item__marker traction-item__marker--done">✓</div>
+            <div>
+              <h3>Bench-scale validation</h3>
+              <p>Calcined clay produced at bench scale. Material characterised by XRD and TGA analysis.</p>
+            </div>
+          </div>
+          <div class="traction-item">
+            <div class="traction-item__marker traction-item__marker--done">✓</div>
+            <div>
+              <h3>Reactivity data obtained</h3>
+              <p>Initial testing indicates high reactivity in the calcined material — an important performance indicator for SCM applications.</p>
+            </div>
+          </div>
+          <div class="traction-item">
+            <div class="traction-item__marker traction-item__marker--done">✓</div>
+            <div>
+              <h3>Patent filed</h3>
+              <p>A patent application covering the core heat-transfer calcination process has been filed.</p>
+            </div>
+          </div>
+          <div class="traction-item">
+            <div class="traction-item__marker traction-item__marker--active">→</div>
+            <div>
+              <h3>Pilot-scale development</h3>
+              <p>Work is underway to progress from bench-scale to pilot-scale, targeting operation under realistic industrial conditions.</p>
+            </div>
+          </div>
+          <div class="traction-item">
+            <div class="traction-item__marker traction-item__marker--active">→</div>
+            <div>
+              <h3>Industry conversations</h3>
+              <p>Discussions ongoing with potential partners in the steel and cement sectors.</p>
+            </div>
+          </div>
+          <div class="traction-item">
+            <div class="traction-item__marker traction-item__marker--active">→</div>
+            <div>
+              <h3>Independent material testing</h3>
+              <p>Planning for third-party quality validation of produced material at pilot scale.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ TEAM PREVIEW ═══════════════ -->
+    <section class="section section--team" id="team">
+      <div class="container">
+        <div class="section-label fade-up">Team</div>
+        <h2 class="section-title fade-up">Researchers and engineers with direct experience in calcined clay and industrial heat.</h2>
+        <p class="section-intro fade-up">
+          The founding team has worked on clay calcination at pilot scale, including at Cambridge Electric Cement (Reclinker), and brings technical backgrounds in materials science, heat transfer, and process engineering.
+        </p>
+
+        <!-- Team preview — 2 founders only, compact layout -->
+        <div class="team-preview-grid fade-up">
+
+          <!-- PHOTO: assets/shiju.jpg -->
+          <div class="team-preview-card">
+            <div class="team-preview-card__photo-wrap">
+              <img src="assets/shiju.jpg" alt="Shiju Joseph" class="team-preview-card__photo"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+              <div class="team-preview-card__placeholder" style="display:none;">SJ</div>
+            </div>
+            <div class="team-preview-card__info">
+              <h3>Shiju Joseph</h3>
+              <div class="team-preview-card__role">Founder &amp; Managing Director</div>
+              <p>Materials scientist. Postdoc Cambridge, PhD KU Leuven. Previously Senior Scientist at Reclinker.</p>
+            </div>
+          </div>
+
+          <!-- PHOTO: assets/patricio.jpg -->
+          <div class="team-preview-card">
+            <div class="team-preview-card__photo-wrap">
+              <img src="assets/patricio.jpg" alt="Patricio A Burdiles" class="team-preview-card__photo"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+              <div class="team-preview-card__placeholder" style="display:none;">PB</div>
+            </div>
+            <div class="team-preview-card__info">
+              <h3>Patricio A Burdiles</h3>
+              <div class="team-preview-card__role">Founder</div>
+              <p>Process and operations engineer. MPhil Cambridge. Previously at Reclinker on heat transfer and slag handling.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="team-preview-cta fade-up">
+          <a href="team.html" class="btn btn--ghost">Meet the full team →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ CONTACT ═══════════════ -->
+    <section class="section section--contact" id="contact">
+      <div class="contact-concentric" aria-hidden="true"></div>
+      <div class="container">
+        <div class="contact-inner fade-up">
+          <div class="section-label" style="color:var(--clay);">Contact</div>
+          <h2 class="contact-title">
+            Get in touch<br />
+            <em>with the team.</em>
+          </h2>
+          <p class="contact-sub">
+            We are open to conversations with potential industrial partners, researchers, and others with an interest in low-carbon building materials.
+          </p>
+          <a href="mailto:info@clayzero.com" class="btn btn--primary btn--large">
+            info@clayzero.com
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__brand">CLAZE</span>
+      <span class="footer__copy">© 2025 Claze. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
