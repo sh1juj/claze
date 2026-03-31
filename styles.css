@@ -27,7 +27,14 @@ img { max-width: 100%; display: block; }
 .section { padding: 96px 0; position: relative; }
 .alt { background: var(--bg-soft); }
 .narrow { max-width: 760px; }
-.eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: .28em; font-size: 12px; font-weight: 600; margin: 0 0 18px; }
+.hero .eyebrow {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
 .eyebrow.small { font-size: 11px; margin-bottom: 0; }
 .eyebrow.orange { color: var(--accent); }
 .section-head h1, .section-head h2, .hero h1, .contact-section h2 {
@@ -36,7 +43,7 @@ img { max-width: 100%; display: block; }
   letter-spacing: -.04em;
   font-weight: 700;
 }
-.hero h1 { font-size: clamp(48px, 7vw, 92px); }
+.hero h1 { font-size: clamp(42px, 5.5vw, 72px); }
 .hero h1 span, .stat strong, .metric-side-value, .brand-dot, .nav-cta, .button { color: var(--accent); }
 .section-head h1, .section-head h2, .contact-section h2 { font-size: clamp(36px, 5vw, 64px); }
 .section-head p, .lede, .stat p, .list-item p, .contact-card p, .site-footer p, .team-card p { color: var(--text-muted); font-size: 18px; }
