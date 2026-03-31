@@ -68,7 +68,14 @@ img { max-width: 100%; display: block; }
 .eyebrow-line { width: 48px; height: 1px; background: var(--accent); }
 .lede { max-width: 680px; }
 .metric-row { display: flex; align-items: flex-end; gap: 22px; margin: 34px 0 26px; }
-.metric-label { color: var(--text-muted); text-transform: uppercase; letter-spacing: .16em; font-size: 12px; margin: 0 0 10px; }
+.metric-row-three .metric-label {
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
 .metric-value { display: flex; align-items: baseline; gap: 12px; }
 .metric-value span { font-size: clamp(58px, 7vw, 96px); font-weight: 700; line-height: 1; color: var(--accent); }
 .metric-value small { color: var(--text-muted); font-size: 16px; }
