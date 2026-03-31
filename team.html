@@ -1,208 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Team — Claze</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claze Team</title>
+  <meta name="description" content="Meet the Claze team and advisors.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- ═══════════════ NAVBAR ═══════════════ -->
-  <nav class="nav" id="navbar">
-    <div class="nav__inner">
-      <!-- LOGO: place file at assets/claze-logo.png -->
-      <a href="index.html" class="nav__logo">
-        <img src="assets/claze-logo.png" alt="Claze" class="nav__logo-img"
-             onerror="this.style.display='none';this.nextElementSibling.style.display='block';" />
-        <span class="nav__logo-fallback" style="display:none;">CLAZE</span>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Claze home">
+        <span class="brand-dot"></span>
+        <span>Claze</span>
       </a>
-      <ul class="nav__links">
-        <li><a href="index.html#problem">Problem</a></li>
-        <li><a href="index.html#solution">Solution</a></li>
-        <li><a href="index.html#how-it-works">Process</a></li>
-        <li><a href="index.html#benefits">Benefits</a></li>
-        <li><a href="index.html#traction">Traction</a></li>
-        <li><a href="team.html" class="nav__link--active">Team</a></li>
-      </ul>
-      <a href="index.html#contact" class="btn btn--nav">Get in Touch</a>
-      <button class="nav__burger" id="burger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="site-nav">
+        <a href="index.html#process">Process</a>
+        <a href="index.html#impact">Impact</a>
+        <a href="index.html#benefits">Benefits</a>
+        <a href="team.html">Team</a>
+        <a href="index.html#contact">Contact</a>
+        <a class="nav-cta" href="mailto:info@clayzero.com">info@clayzero.com</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <div class="mobile-menu" id="mobileMenu">
-    <ul>
-      <li><a href="index.html#problem" class="mobile-link">Problem</a></li>
-      <li><a href="index.html#solution" class="mobile-link">Solution</a></li>
-      <li><a href="index.html#how-it-works" class="mobile-link">Process</a></li>
-      <li><a href="index.html#benefits" class="mobile-link">Benefits</a></li>
-      <li><a href="index.html#traction" class="mobile-link">Traction</a></li>
-      <li><a href="team.html" class="mobile-link">Team</a></li>
-      <li><a href="index.html#contact" class="mobile-link mobile-link--cta">Get in Touch</a></li>
-    </ul>
-  </div>
-
-  <main>
-
-    <!-- ═══════════════ TEAM HERO ═══════════════ -->
-    <section class="page-hero">
-      <div class="page-hero__concentric" aria-hidden="true"></div>
-      <div class="container page-hero__inner">
-        <div class="fade-in">
-          <a href="index.html" class="page-hero__back">← Back to main site</a>
-          <div class="section-label" style="margin-top:1.5rem;">Team</div>
-          <h1 class="page-hero__title">
-            The people<br />behind <em>Claze.</em>
-          </h1>
-          <p class="page-hero__sub">
-            Our team combines materials science, process engineering, and industry expertise. We are at an early stage and actively building the company.
-          </p>
-        </div>
+  <main class="section team-page">
+    <div class="container">
+      <div class="section-head narrow">
+        <p class="eyebrow">Team</p>
+        <h1>Built by specialists.<br>Backed by operators.</h1>
+        <p>The Claze team combines materials science, process engineering, commercial strategy, and industrial deployment experience.</p>
       </div>
-    </section>
 
-    <!-- ═══════════════ FOUNDERS ═══════════════ -->
-    <section class="section section--light">
-      <div class="container">
-        <div class="team-group-label fade-up">Founders</div>
-
-        <div class="founders-grid fade-up">
-
-          <!--
-            PHOTO: Replace src with assets/shiju.jpg
-            Fallback shows initials if image is missing.
-          -->
-          <div class="founder-card">
-            <div class="founder-card__photo-wrap">
-              <img src="assets/shiju.jpg" alt="Shiju Joseph" class="founder-card__photo"
-                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-              <div class="founder-card__placeholder" style="display:none;">SJ</div>
-            </div>
-            <div class="founder-card__info">
-              <h3>
-  Shiju Joseph
-  <a href="https://www.linkedin.com/in/sh1ju" target="_blank" class="linkedin-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4v16h-4V8zm7 0h3.6v2.2h.05c.5-.95 1.7-2.2 3.5-2.2 3.75 0 4.45 2.45 4.45 5.6V24h-4v-8.8c0-2.1-.04-4.8-2.9-4.8-2.9 0-3.35 2.3-3.35 4.65V24h-4V8z"/>
-    </svg>
-  </a>
-</h3>
-              <div class="founder-card__role">Founder &amp; Managing Director</div>
-              <p>Materials scientist specialising in supplementary cementitious materials. Previously Assistant Research Professor at the University of Cambridge; PhD from KU Leuven. Senior Scientist at Reclinker</p>
-            </div>
-          </div>
-
-          <!--
-            PHOTO: Replace src with assets/patricio.jpg
-          -->
-          <div class="founder-card">
-            <div class="founder-card__photo-wrap">
-              <img src="assets/patricio.jpg" alt="Patricio A Burdiles" class="founder-card__photo"
-                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-              <div class="founder-card__placeholder" style="display:none;">PB</div>
-            </div>
-            <div class="founder-card__info">
-              <h3>Patricio A Burdiles</h3>
-              <div class="founder-card__role">Non-Executive Founder</div>
-              <p>Process and operations engineer at Reclinker. MPhil from the University of Cambridge.  Focuses on heat transfer, process design, and industrial slag handling.</p>
-            </div>
-          </div>
-
-        </div>
+      <div class="team-grid">
+        <article class="team-card">
+          <h3>Shiju Joseph</h3>
+          <p class="role">Co-Founder</p>
+          <p>Materials scientist specialising in low carbon cement and calcined clays. Early engineer at Reclinker and researcher at the University of Cambridge.</p>
+          <a href="https://www.linkedin.com/in/sh1ju/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </article>
+        <article class="team-card">
+          <h3>Patricio Burdiles</h3>
+          <p class="role">Co-Founder</p>
+          <p>Process and operations engineer with design and supply chain experience in the mining industry and work at Reclinker and the University of Cambridge.</p>
+          <a href="https://www.linkedin.com/in/patricio-alfonso-burdiles-27282762/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </article>
+        <article class="team-card">
+          <h3>Vighnesh Daas</h3>
+          <p class="role">Commercial Advisor & Early Investor</p>
+          <p>Startup advisor and thought leader in concrete innovation, supporting Claze on commercial strategy and industry partnerships.</p>
+          <a href="https://www.linkedin.com/in/vighneshdaas6/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </article>
+        <article class="team-card">
+          <h3>Fragkoulis Kanavaris</h3>
+          <p class="role">Technical Advisor & Early Investor</p>
+          <p>Global lead for concrete materials and decarbonisation at Arup, specialising in low carbon concrete and supplementary cementitious materials.</p>
+          <a href="https://www.linkedin.com/in/fragkoulis-kanavaris-1647ab67/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </article>
+        <article class="team-card">
+          <h3>Philip White</h3>
+          <p class="role">Business Advisor & Early Investor</p>
+          <p>Exited owner of multiple businesses including JP Concrete and a serial entrepreneur with more than 20 years of experience.</p>
+          <a href="https://www.linkedin.com/in/philipcavalier/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </article>
       </div>
-    </section>
-
-    <!-- ═══════════════ ADVISORS ═══════════════ -->
-    <section class="section section--warm">
-      <div class="container">
-        <div class="team-group-label fade-up">Advisors</div>
-        <p class="section-intro fade-up" style="margin-bottom:2.5rem;">
-          Our advisors bring expertise across decarbonisation, concrete materials, commercialisation, and industrial sectors.
-        </p>
-
-        <div class="advisors-grid fade-up">
-
-          <!--
-            PHOTO: Replace src with assets/vighnesh.jpg
-          -->
-          <div class="advisor-card">
-            <div class="advisor-card__photo-wrap">
-              <img src="assets/vighnesh.jpg" alt="Vighnesh Daas" class="advisor-card__photo"
-                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-              <div class="advisor-card__placeholder" style="display:none;">VD</div>
-            </div>
-            <h3>
-  Vighnesh Daas
-  <a href="https://www.linkedin.com/in/vighneshdaas6" target="_blank" rel="noopener noreferrer" class="linkedin-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4v16h-4V8zm7 0h3.6v2.2h.05c.5-.95 1.7-2.2 3.5-2.2 3.75 0 4.45 2.45 4.45 5.6V24h-4v-8.8c0-2.1-.04-4.8-2.9-4.8-2.9 0-3.35 2.3-3.35 4.65V24h-4V8z"/>
-    </svg>
-  </a>
-</h3>
-            <div class="advisor-card__role">Advisor &amp; Interim CCO</div>
-            <p>Commercialisation Director at Sensicon Ventures. Supports Claze on commercial strategy and partner development.</p>
-          </div>
-
-          <!--
-            PHOTO: Replace src with assets/fragkoulis.jpg
-          -->
-          <div class="advisor-card">
-            <div class="advisor-card__photo-wrap">
-              <img src="assets/fragkoulis.jpg" alt="Fragkoulis Kanavaris" class="advisor-card__photo"
-                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-              <div class="advisor-card__placeholder" style="display:none;">FK</div>
-            </div>
-            <h3>Fragkoulis Kanavaris</h3>
-            <div class="advisor-card__role">Advisor</div>
-            <p>Global Lead for Concrete Materials &amp; Decarbonisation at Arup. Specialist in low-carbon concrete and supplementary cementitious materials.</p>
-          </div>
-
-          <!--
-            PHOTO: Replace src with assets/philip.jpg
-          -->
-          <div class="advisor-card">
-            <div class="advisor-card__photo-wrap">
-              <img src="assets/philip.jpg" alt="Philip Cavalier-White" class="advisor-card__photo"
-                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-              <div class="advisor-card__placeholder" style="display:none;">PC</div>
-            </div>
-            <h3>Philip Cavalier-White</h3>
-            <div class="advisor-card__role">Advisor</div>
-            <p>Entrepreneur and business owner with experience in climate and industrial sectors.</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════ CONTACT CTA ═══════════════ -->
-    <section class="section section--contact">
-      <div class="contact-concentric" aria-hidden="true"></div>
-      <div class="container">
-        <div class="contact-inner fade-up">
-          <div class="section-label" style="color:var(--clay);">Contact</div>
-          <h2 class="contact-title">
-            Interested in<br />
-            <em>working with us?</em>
-          </h2>
-          <p class="contact-sub">
-            We are open to conversations with potential industrial partners, researchers, and others with a relevant interest.
-          </p>
-          <a href="mailto:info@clayzero.com" class="btn btn--primary btn--large">
-            info@clayzero.com
-          </a>
-        </div>
-      </div>
-    </section>
-
+    </div>
   </main>
 
-  <footer class="footer">
-    <div class="container footer__inner">
-      <span class="footer__brand">CLAZE</span>
-      <span class="footer__copy">© 2025 Claze. All rights reserved.</span>
+  <footer class="site-footer">
+    <div class="container footer-bottom single-line">
+      <p>© 2026 Claze Technologies Ltd. · info@clayzero.com</p>
+      <p><a href="index.html">Back to home</a></p>
     </div>
   </footer>
 
