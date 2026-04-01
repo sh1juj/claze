@@ -198,6 +198,4 @@ img { max-width: 100%; display: block; }
   .footer-bottom { flex-direction: column; align-items: flex-start; }
 }
 
-.hero-copy h1 span {
-  color: var(--text);
-}
+
