@@ -199,3 +199,28 @@ img { max-width: 100%; display: block; }
 }
 
 
+
+
+.hero-copy h1 .kicker {
+  display: block;
+  margin-top: 14px;
+
+  font-size: 1.2em;     /* 👈 increase from 0.45 */
+  font-weight: 600;     /* 👈 slightly bolder */
+  line-height: 1.2;
+
+  color: var(--accent);
+}
+
+.image-band {
+  height: 75vh;
+    display: flex;
+  overflow: hidden;
+}
+
+.image-band video {
+  width: 40%;
+  height: 100%;
+  margin-left: 6%;   /* 👈 adjust this */
+  display: block;
+}
