@@ -224,3 +224,78 @@ img { max-width: 100%; display: block; }
   margin-left: 6%;   /* 👈 adjust this */
   display: block;
 }
+
+.accent {
+  color: var(--accent);
+}
+.section-head h2 .accent {
+  color: var(--accent);
+}
+
+.founders-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem;
+}
+
+.advisors-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.founders-grid .team-card h3 {
+  font-size: 3rem;
+}
+
+.founders-grid .team-card .role {
+  font-size: 0.95rem;
+}
+
+.founders-grid .team-card p:not(.role) {
+  font-size: 1.35rem;
+  line-height: 1.5;
+}
+
+.advisors-grid .team-card h3 {
+  font-size: 2.2rem;
+}
+
+.advisors-grid .team-card .role {
+  font-size: 0.85rem;
+}
+
+.advisors-grid .team-card p:not(.role) {
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+@media (max-width: 900px) {
+  .founders-grid,
+  .advisors-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section-title {
+  font-size: 22px;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  color: var(--text);
+  text-transform: none;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+
+#benefits .section-head {
+  margin-bottom: 3rem;
+}
+
+#benefits h2 {
+  max-width: 900px;
+  line-height: 1.05;
+}
+
+.two-col-list {
+  align-items: start;
+}
