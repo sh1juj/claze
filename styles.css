@@ -402,24 +402,25 @@ body.deck .team-card .avatar {
 
 /* --- Founders: horizontal cream cards (photo left, text right) --- */
 body.deck .founders-grid .team-card {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  column-gap: 26px;
-  align-items: start;
+  display: flex;
+  align-items: center;
+  gap: 28px;
   background: #F4F1ED;
   border-radius: 20px;
   padding: 32px 34px;
 }
 body.deck .founders-grid .team-card .avatar {
-  grid-column: 1; grid-row: 1 / -1; align-self: center;
+  flex: none;
   width: 112px; height: 112px; margin: 0;
 }
-body.deck .founders-grid .team-card > :not(.avatar) { grid-column: 2; }
-body.deck .founders-grid .team-card h3 { font-size: 2rem; line-height: 1.1; margin: 0 0 8px; }
+body.deck .founders-grid .team-card .member-info { display: flex; flex-direction: column; }
+body.deck .founders-grid .team-card h3 { font-size: 2rem; line-height: 1.1; margin: 0 0 4px; }
 body.deck .founders-grid .team-card .role {
-  font-size: .78rem; text-transform: uppercase; letter-spacing: .12em; margin: 0 0 14px;
+  font-size: 1.15rem; font-weight: 600; text-transform: uppercase;
+  letter-spacing: .06em; margin: 0 0 14px;
 }
 body.deck .founders-grid .team-card p:not(.role) { font-size: 1rem; line-height: 1.55; margin: 0 0 16px; }
+body.deck .founders-grid .team-card .card-links { margin-top: 4px; }
 
 /* --- Advisors: centered white cards (photo top) --- */
 body.deck .advisors-grid { gap: 24px; }
@@ -461,7 +462,6 @@ body.deck .site-footer a { color: #A02D2D; }
 
 /* --- Small screens: stack founder cards --- */
 @media (max-width: 560px) {
-  body.deck .founders-grid .team-card { grid-template-columns: 1fr; justify-items: center; text-align: center; }
-  body.deck .founders-grid .team-card .avatar { grid-row: auto; margin-bottom: 14px; }
-  body.deck .founders-grid .team-card > :not(.avatar) { grid-column: 1; }
+  body.deck .founders-grid .team-card { flex-direction: column; text-align: center; }
+  body.deck .founders-grid .team-card .member-info { align-items: center; }
 }
