@@ -1,0 +1,5 @@
+# Private / confidential — never publish
+team-slides/
+
+# Local preview artifacts
+_preview_*.html

@@ -1,22 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
 :root {
-  --bg: #171915;
-  --bg-soft: #232522;
-  --bg-muted: #2d2f2c;
-  --text: #f9f8f1;
-  --text-muted: #9b9d99;
-  --line: #333632;
-  --accent: #ff5a00;
-  --accent-soft: #e4ecd6;
-  --panel: #1d201c;
+  /* Deck palette (SlideDeck v10) — light theme, maroon accent */
+  --bg: #FCFBFA;
+  --bg-soft: #F2EEE9;
+  --bg-muted: #E9E3DD;
+  --text: #1b1b1b;
+  --text-muted: #565452;
+  --line: #E7E1DB;
+  --accent: #A02D2D;
+  --accent-soft: #C78982;
+  --panel: #FFFFFF;
   --max: 1200px;
-  --radius: 4px;
-  --shadow: 0 10px 35px rgba(0,0,0,.18);
+  --radius: 10px;
+  --shadow: 0 10px 30px rgba(40,25,25,.08);
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
-  font-family: Inter Tight, Inter, Arial, sans-serif;
+  font-family: 'Poppins', 'Inter Tight', Inter, Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.5;
@@ -27,6 +30,14 @@ img { max-width: 100%; display: block; }
 .section { padding: 96px 0; position: relative; }
 .alt { background: var(--bg-soft); }
 .narrow { max-width: 760px; }
+.eyebrow {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 0 16px;
+}
 .hero .eyebrow {
   color: var(--accent);
   text-transform: uppercase;
@@ -50,12 +61,14 @@ img { max-width: 100%; display: block; }
 .site-header {
   position: sticky; top: 0; z-index: 40;
   backdrop-filter: blur(12px);
-  background: rgba(23,25,21,.84);
-  border-bottom: 1px solid rgba(51,54,50,.9);
+  background: rgba(252,251,250,.9);
+  border-bottom: 1px solid #ECE6E0;
 }
-.nav-wrap { display: flex; align-items: center; justify-content: space-between; min-height: 68px; gap: 18px; }
-.brand { display: inline-flex; align-items: center; gap: 10px; text-transform: uppercase; letter-spacing: .08em; font-size: 14px; font-weight: 700; }
+.nav-wrap { display: flex; align-items: center; justify-content: space-between; min-height: 72px; gap: 18px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; letter-spacing: .01em; font-size: 20px; font-weight: 600; color: #2b2b2b; }
 .brand-dot { width: 8px; height: 8px; border-radius: 999px; background: var(--accent); display: inline-block; }
+.brand-logo { height: 40px; width: auto; display: block; }
+.brand-logo-lg { height: 58px; }
 .site-nav { display: flex; align-items: center; gap: 28px; }
 .site-nav a { color: var(--text-muted); font-size: 12px; text-transform: uppercase; letter-spacing: .18em; }
 .site-nav a:hover { color: var(--text); }
@@ -168,6 +181,10 @@ img { max-width: 100%; display: block; }
 .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
 .team-card { border-top: 1px solid var(--line); padding-top: 22px; }
 .team-card a { color: var(--accent); text-transform: uppercase; letter-spacing: .14em; font-size: 12px; }
+.card-links { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.icon-link { display: inline-flex; align-items: center; }
+.icon-link .ic { display: block; transition: opacity .12s ease; }
+.icon-link:hover .ic { opacity: .7; }
 
 @media (max-width: 980px) {
   .hero-grid, .cards.three, .stats-grid, .two-col-list, .contact-grid, .footer-grid, .team-grid { grid-template-columns: 1fr; }
@@ -184,7 +201,7 @@ img { max-width: 100%; display: block; }
   display: none;
 }
   .site-nav {
-    position: absolute; left: 0; right: 0; top: 68px; background: rgba(23,25,21,.98);
+    position: absolute; left: 0; right: 0; top: 72px; background: rgba(252,251,250,.98);
     border-bottom: 1px solid var(--line); padding: 18px 16px 22px; display: none; flex-direction: column; align-items: flex-start;
   }
   .site-nav.open { display: flex; }
@@ -269,6 +286,35 @@ img { max-width: 100%; display: block; }
   opacity: 0.9;
 }
 
+/* Team photos */
+.team-card .avatar {
+  width: 92px; height: 92px; border-radius: 50%;
+  object-fit: cover; display: block; margin: 0 0 18px;
+  background: var(--bg-soft); border: 1px solid var(--line);
+}
+.founders-grid .team-card .avatar { width: 120px; height: 120px; }
+.avatar.initials {
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 600; letter-spacing: .04em; color: var(--accent);
+  background: var(--bg-soft); text-transform: uppercase;
+}
+.founders-grid .team-card .avatar.initials { font-size: 2.4rem; }
+.advisors-grid .team-card .avatar.initials { font-size: 1.5rem; }
+
+/* Hiring card */
+.team-card.hiring {
+  border: 1px dashed var(--accent);
+  border-radius: var(--radius);
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.team-card.hiring .plus {
+  font-size: 2.4rem; line-height: 1; color: var(--accent); margin-bottom: 12px;
+}
+.team-card.hiring h3 { color: var(--accent); }
+
 @media (max-width: 900px) {
   .founders-grid,
   .advisors-grid {
@@ -298,4 +344,124 @@ img { max-width: 100%; display: block; }
 
 .two-col-list {
   align-items: start;
+}
+
+/* =========================================================
+   Deck-themed Team page — scoped to body.deck.
+   The home page (index.html) has no .deck class, so it is
+   completely unaffected by everything below.
+   Palette + type taken from SlideDeck v10, slide 10.
+   ========================================================= */
+body.deck {
+  background: #FCFBFA;
+  color: #1b1b1b;
+  font-family: 'Poppins', 'Inter Tight', Arial, sans-serif;
+}
+
+/* --- Header / nav --- */
+body.deck .site-header {
+  background: rgba(252,251,250,.9);
+  border-bottom: 1px solid #ECE6E0;
+}
+body.deck .brand {
+  text-transform: none; letter-spacing: .01em;
+  font-size: 20px; font-weight: 600; color: #2b2b2b; gap: 10px;
+}
+body.deck .brand-logo { height: 38px; width: auto; display: block; }
+body.deck .site-nav a { color: #6d6a66; }
+body.deck .site-nav a:hover { color: #A02D2D; }
+body.deck .nav-cta { background: #A02D2D; }
+body.deck .nav-toggle { color: #2b2b2b; }
+@media (max-width: 980px) {
+  body.deck .site-nav { background: rgba(252,251,250,.98); border-bottom: 1px solid #ECE6E0; }
+}
+
+/* --- Section headings --- */
+body.deck .team-page .eyebrow { color: #C78982; font-weight: 600; letter-spacing: .22em; }
+body.deck .team-page h1 { color: #0f0f0f; font-weight: 700; letter-spacing: -.02em; }
+body.deck .team-page h1 .accent { color: #A02D2D; }
+body.deck .team-page .section-head p { color: #565452; }
+body.deck .team-page .section-title {
+  color: #A02D2D; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .18em; font-size: 15px;
+  border-bottom: none; padding-bottom: 0;
+}
+
+/* --- Cards: shared --- */
+body.deck .team-card { border-top: none; padding: 0; }
+body.deck .team-card h3 { color: #141414; font-weight: 600; letter-spacing: -.01em; }
+body.deck .team-card .role { color: #A02D2D; }
+body.deck .team-card .role .accent { color: #A02D2D; }
+body.deck .team-card p:not(.role) { color: #565452; }
+body.deck .team-card a { color: #A02D2D; }
+body.deck .team-card .avatar {
+  border: none;
+  box-shadow: 0 4px 14px rgba(0,0,0,.10);
+  background: #ece9e6;
+}
+
+/* --- Founders: horizontal cream cards (photo left, text right) --- */
+body.deck .founders-grid .team-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 26px;
+  align-items: start;
+  background: #F4F1ED;
+  border-radius: 20px;
+  padding: 32px 34px;
+}
+body.deck .founders-grid .team-card .avatar {
+  grid-column: 1; grid-row: 1 / -1; align-self: center;
+  width: 112px; height: 112px; margin: 0;
+}
+body.deck .founders-grid .team-card > :not(.avatar) { grid-column: 2; }
+body.deck .founders-grid .team-card h3 { font-size: 2rem; line-height: 1.1; margin: 0 0 8px; }
+body.deck .founders-grid .team-card .role {
+  font-size: .78rem; text-transform: uppercase; letter-spacing: .12em; margin: 0 0 14px;
+}
+body.deck .founders-grid .team-card p:not(.role) { font-size: 1rem; line-height: 1.55; margin: 0 0 16px; }
+
+/* --- Advisors: centered white cards (photo top) --- */
+body.deck .advisors-grid { gap: 24px; }
+body.deck .advisors-grid .team-card {
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  background: #fff;
+  border: 1px solid #EFEAE5;
+  border-radius: 16px;
+  padding: 30px 22px;
+  box-shadow: 0 6px 20px rgba(40,25,25,.05);
+}
+body.deck .advisors-grid .team-card .avatar { width: 92px; height: 92px; margin: 0 0 16px; }
+body.deck .advisors-grid .team-card h3 { font-size: 1.2rem; margin: 0 0 6px; }
+body.deck .advisors-grid .team-card .role {
+  font-size: .72rem; text-transform: uppercase; letter-spacing: .1em; margin: 0 0 12px;
+}
+body.deck .advisors-grid .team-card p:not(.role) {
+  font-size: .92rem; line-height: 1.5; margin: 0 0 16px; opacity: 1; color: #5d5a57;
+}
+body.deck .advisors-grid .team-card .card-links { justify-content: center; margin-top: auto; }
+
+/* --- Hiring card --- */
+body.deck .team-card.hiring {
+  background: #FBF3F1;
+  border: 1px dashed #C98B85;
+  border-radius: 16px;
+  align-items: center; justify-content: center; text-align: center;
+}
+body.deck .team-card.hiring .plus,
+body.deck .team-card.hiring h3,
+body.deck .team-card.hiring .role .accent,
+body.deck .team-card.hiring a { color: #A02D2D; }
+
+/* --- Footer --- */
+body.deck .site-footer { background: #F4F1ED; border-top: 1px solid #E7E1DB; }
+body.deck .site-footer p, body.deck .footer-bottom { color: #6d6a66; }
+body.deck .footer-bottom { border-top: 1px solid #E7E1DB; }
+body.deck .site-footer a { color: #A02D2D; }
+
+/* --- Small screens: stack founder cards --- */
+@media (max-width: 560px) {
+  body.deck .founders-grid .team-card { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+  body.deck .founders-grid .team-card .avatar { grid-row: auto; margin-bottom: 14px; }
+  body.deck .founders-grid .team-card > :not(.avatar) { grid-column: 1; }
 }

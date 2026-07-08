@@ -5,13 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Claze Team</title>
   <meta name="description" content="Meet the Claze team and advisors.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="deck">
   <header class="site-header" id="top">
     <div class="container nav-wrap">
       <a class="brand" href="index.html" aria-label="Claze home">
-        <span class="brand-dot"></span>
+        <img class="brand-logo" src="assets/claze-mark.png" alt="Claze">
         <span>Claze</span>
       </a>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
@@ -24,6 +27,17 @@
   </header>
 
   <main class="section team-page">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+      <symbol id="icon-linkedin" viewBox="0 0 24 24">
+        <path fill="#0A66C2" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+      </symbol>
+      <symbol id="icon-scholar" viewBox="0 0 512 512">
+        <path fill="#4285F4" d="M256 411.12L0 202.667 256 0z"/>
+        <path fill="#356AC3" d="M256 411.12l256-208.453L256 0z"/>
+        <circle fill="#A0C3FF" cx="256" cy="362.667" r="149.333"/>
+        <path fill="#76A7FA" d="M121.037 298.667c-12.976 25.6-20.297 54.629-20.297 85.333 0 30.703 7.321 59.733 20.297 85.333h269.926c12.976-25.6 20.297-54.63 20.297-85.333 0-30.704-7.321-59.733-20.297-85.333z"/>
+      </symbol>
+    </svg>
     <div class="container">
       <div class="section-head narrow">
         <p class="eyebrow">Team</p>
@@ -37,17 +51,24 @@
 
     <div class="team-grid founders-grid">
       <article class="team-card">
+        <img class="avatar" src="assets/shiju.jpg" alt="Shiju Joseph" loading="lazy">
         <h3>Shiju Joseph</h3>
-        <p class="role"><span class="accent">Founder & Managing Director</span></p>
-        <p>Materials scientist specialising in low carbon cement and calcined clays. Early scientist at Reclinker and researcher at the University of Cambridge.</p>
-        <a href="https://www.linkedin.com/in/sh1ju/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <p class="role"><span class="accent">CTO</span></p>
+        <p>Civil engineer and cement expert with 14 years in cement. Former scientist at Reclinker.</p>
+        <div class="card-links">
+          <a class="icon-link" href="https://www.linkedin.com/in/sh1ju/" target="_blank" rel="noopener noreferrer" aria-label="Shiju Joseph on LinkedIn"><svg class="ic" width="20" height="20" aria-hidden="true"><use href="#icon-linkedin"/></svg></a>
+          <a class="icon-link" href="https://scholar.google.com/citations?user=RT2oVL0AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" aria-label="Shiju Joseph on Google Scholar"><svg class="ic" width="20" height="20" aria-hidden="true"><use href="#icon-scholar"/></svg></a>
+        </div>
       </article>
 
       <article class="team-card">
-        <h3>Patricio Burdiles</h3>
-        <p class="role"><span class="accent">Co-founder</span></p>
-        <p>Process and operations engineer with design and supply chain experience in the mining industry and work at Reclinker and the University of Cambridge.</p>
-        <a href="https://www.linkedin.com/in/patricio-alfonso-burdiles-27282762/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <img class="avatar" src="assets/julian.jpg" alt="Julian Peck" loading="lazy">
+        <h3>Julian Peck</h3>
+        <p class="role"><span class="accent">CEO</span></p>
+        <p>Three-time founder with 10 years at Cambridge Enterprise and 4 years in deep-tech venture capital.</p>
+        <div class="card-links">
+          <a class="icon-link" href="https://www.linkedin.com/in/julianpeck/" target="_blank" rel="noopener noreferrer" aria-label="Julian Peck on LinkedIn"><svg class="ic" width="20" height="20" aria-hidden="true"><use href="#icon-linkedin"/></svg></a>
+        </div>
       </article>
     </div>
 
@@ -57,24 +78,61 @@
 
     <div class="team-grid advisors-grid">
       <article class="team-card">
-        <h3>Vighnesh Daas</h3>
-        <p class="role"><span class="accent">Commercial Advisor & Early Investor</span></p>
-        <p>Startup advisor and thought leader in concrete innovation, supporting Claze on commercial strategy and industry partnerships.</p>
-        <a href="https://www.linkedin.com/in/vighneshdaas6/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </article>
-
-      <article class="team-card">
+        <img class="avatar" src="assets/fragkoulis.jpg" alt="Fragkoulis Kanavaris" loading="lazy">
         <h3>Fragkoulis Kanavaris</h3>
-        <p class="role"><span class="accent">Technical Advisor & Early Investor</span></p>
-        <p>Global lead for concrete materials and decarbonisation at Arup, specialising in low carbon concrete and supplementary cementitious materials.</p>
-        <a href="https://www.linkedin.com/in/fragkoulis-kanavaris-1647ab67/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <p class="role"><span class="accent">Technical Advisor & Investor</span></p>
+        <p>#1 concrete expert at Arup, developing green-concrete standards. Early investor in Claze.</p>
+        <div class="card-links">
+          <a class="icon-link" href="https://www.linkedin.com/in/fragkoulis-kanavaris-1647ab67/" target="_blank" rel="noopener noreferrer" aria-label="Fragkoulis Kanavaris on LinkedIn"><svg class="ic" width="20" height="20" aria-hidden="true"><use href="#icon-linkedin"/></svg></a>
+          <a class="icon-link" href="https://scholar.google.com/citations?user=f_CEodAAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" aria-label="Fragkoulis Kanavaris on Google Scholar"><svg class="ic" width="20" height="20" aria-hidden="true"><use href="#icon-scholar"/></svg></a>
+        </div>
       </article>
 
       <article class="team-card">
-        <h3>Philip White</h3>
-        <p class="role"><span class="accent">Business Advisor & Early Investor</span></p>
-        <p>Exited owner of multiple businesses including JP Concrete and a serial entrepreneur with more than 20 years of experience.</p>
-        <a href="https://www.linkedin.com/in/philipcavalier/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <img class="avatar" src="assets/vighnesh.jpg" alt="Vighnesh Daas" loading="lazy">
+        <h3>Vighnesh Daas</h3>
+        <p class="role"><span class="accent">Commercial Advisor & Investor</span></p>
+        <p>Senior investor at Concrete Transition Capital. Early investor in Claze.</p>
+        <div class="card-links">
+          <a class="icon-link" href="https://www.linkedin.com/in/vighneshdaas6/" target="_blank" rel="noopener noreferrer" aria-label="Vighnesh Daas on LinkedIn"><svg class="ic" width="20" height="20" aria-hidden="true"><use href="#icon-linkedin"/></svg></a>
+        </div>
+      </article>
+
+      <article class="team-card">
+        <img class="avatar" src="assets/philip.jpg" alt="Philip Cavalier-White" loading="lazy">
+        <h3>Philip Cavalier-White</h3>
+        <p class="role"><span class="accent">Business Advisor & Investor</span></p>
+        <p>Founder of JP Concrete and Modular Cubed, and of Sensicon Ventures. Early investor in Claze.</p>
+        <div class="card-links">
+          <a class="icon-link" href="https://www.linkedin.com/in/philipcavalier/" target="_blank" rel="noopener noreferrer" aria-label="Philip Cavalier-White on LinkedIn"><svg class="ic" width="20" height="20" aria-hidden="true"><use href="#icon-linkedin"/></svg></a>
+        </div>
+      </article>
+
+      <article class="team-card">
+        <img class="avatar" src="assets/nigel.jpg" alt="Nigel Somerville Roberts" loading="lazy">
+        <h3>Nigel Somerville Roberts</h3>
+        <p class="role"><span class="accent">Process & IP Advisor</span></p>
+        <p>Upscaling, process and IP consultant. Ex-P&G and a powder-handling expert.</p>
+        <div class="card-links">
+          <a class="icon-link" href="https://www.linkedin.com/in/nigel-somerville-roberts-2b240319/" target="_blank" rel="noopener noreferrer" aria-label="Nigel Somerville Roberts on LinkedIn"><svg class="ic" width="20" height="20" aria-hidden="true"><use href="#icon-linkedin"/></svg></a>
+        </div>
+      </article>
+
+      <article class="team-card">
+        <img class="avatar" src="assets/patricio.jpg" alt="Patricio A Burdiles" loading="lazy">
+        <h3>Patricio A Burdiles</h3>
+        <p class="role"><span class="accent">Operations Advisor</span></p>
+        <p>Led the Cement2Zero and Reclinker scale-up. Operations and process engineering.</p>
+        <div class="card-links">
+          <a class="icon-link" href="https://www.linkedin.com/in/patricio-alfonso-burdiles-27282762/" target="_blank" rel="noopener noreferrer" aria-label="Patricio A Burdiles on LinkedIn"><svg class="ic" width="20" height="20" aria-hidden="true"><use href="#icon-linkedin"/></svg></a>
+        </div>
+      </article>
+
+      <article class="team-card hiring">
+        <div class="plus" aria-hidden="true">+</div>
+        <h3>Hiring</h3>
+        <p class="role"><span class="accent">Steelmaking expert</span></p>
+        <p>We're growing the team. <a href="mailto:info@clayzero.com">Get in touch</a>.</p>
       </article>
     </div>
     </div>
